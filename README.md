@@ -1,4 +1,4 @@
-# Nuxt-4
+# Nuxt-4.4.2
 
 ## Requirements
 
