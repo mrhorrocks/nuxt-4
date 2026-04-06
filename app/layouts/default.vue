@@ -1,9 +1,7 @@
 <template>
-  <div>
-    <AppNavBar />
-    <main class="container app-main" aria-label="Page content">
-      <slot />
-    </main>
-    <AppFooter />
-  </div>
+  <AppHeader />
+  <main class="app-main bg-red-400" aria-label="Page content">
+    <slot />
+  </main>
+  <AppFooter />
 </template>

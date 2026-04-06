@@ -1,8 +1,14 @@
 <template>
-  <nav class="container navbar" role="contentinfo" aria-label="Main navigation">
+  <nav
+    class="navbar bg-red-300"
+    role="contentinfo"
+    aria-label="Main navigation"
+  >
+    <!-- LOGO -->
     <ul class="navbar__brand">
       <li><NuxtLink to="/" aria-label="Home">logo</NuxtLink></li>
     </ul>
+    <!-- NAV LINKS -->
     <ul class="navbar__menu">
       <li>1</li>
       <li>2</li>
@@ -11,6 +17,12 @@
   </nav>
 </template>
 
-<script lang="ts" setup></script>
-
-<style></style>
+<style scss>
+.navbar {
+  ul {
+    li {
+      background-color: green;
+    }
+  }
+}
+</style>
