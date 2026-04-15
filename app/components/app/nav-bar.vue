@@ -1,12 +1,12 @@
 <template>
-  <nav role="contentinfo" aria-label="Main navigation">
+  <nav role="contentinfo" aria-label="Main navigation" class="navbar">
     <!-- LOGO -->
-    <ul class="navbar__brand">
+    <ul class="brand">
       <li><NuxtLink to="/" aria-label="Home">logo</NuxtLink></li>
     </ul>
 
     <!-- NAV LINKS -->
-    <ul class="navbar__menu">
+    <ul class="menu">
       <li><NuxtLink :to="{ name: 'about' }">about</NuxtLink></li>
       <li><NuxtLink :to="{ name: 'test' }">test</NuxtLink></li>
     </ul>
@@ -19,10 +19,12 @@
   justify-content: space-between;
   align-items: center;
   background-color: green;
-  &__brand {
+
+  .brand {
     background-color: aqua;
   }
-  &__menu {
+
+  .menu {
     background-color: orange;
     display: flex;
     gap: 1.5rem;
